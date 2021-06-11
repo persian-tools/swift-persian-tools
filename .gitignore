@@ -1,0 +1,17 @@
+xcuserdata/
+build/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+.build/
+.DS_Store
+SwiftPersianTools.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+*UserInterfaceState.xcuserstate
+*xcdebugger/Breakpoints_v2.xcbkptlist
+*xcschememanagement.plist
