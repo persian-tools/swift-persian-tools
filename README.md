@@ -36,3 +36,14 @@ let number: Int = 1546
 number.convertToPersianText()   /// "یک هزار و پانصد و چهل و شش"
 
 ```
+
+### Add and remove commas to numbers
+```swift
+import SwiftPersianTools
+
+let strNumber = "9423511"
+strNumber.addComma()   /// "۹٬۴۲۳٬۵۱۱"
+
+let strNumber = "9,423,511"
+strNumber.removeComma()   /// "9423511"
+```
