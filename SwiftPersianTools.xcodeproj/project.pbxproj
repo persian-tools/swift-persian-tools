@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3027971E26773985004FA9BB /* ProvincesCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027971D26773985004FA9BB /* ProvincesCode.swift */; };
+		30279720267742D9004FA9BB /* CityCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027971F267742D9004FA9BB /* CityCode.swift */; };
+		30279722267743FF004FA9BB /* PlaceByNationalId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30279721267743FF004FA9BB /* PlaceByNationalId.swift */; };
 		303E68792642AFD6006447A2 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303E68782642AFD6006447A2 /* String.swift */; };
 		303E687B2642B321006447A2 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303E687A2642B321006447A2 /* Int.swift */; };
 		303E687D2642B34B006447A2 /* SwiftPersianTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303E687C2642B34B006447A2 /* SwiftPersianTools.swift */; };
@@ -29,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3027971D26773985004FA9BB /* ProvincesCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvincesCode.swift; sourceTree = "<group>"; };
+		3027971F267742D9004FA9BB /* CityCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCode.swift; sourceTree = "<group>"; };
+		30279721267743FF004FA9BB /* PlaceByNationalId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceByNationalId.swift; sourceTree = "<group>"; };
 		303E68782642AFD6006447A2 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		303E687A2642B321006447A2 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		303E687C2642B34B006447A2 /* SwiftPersianTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPersianTools.swift; sourceTree = "<group>"; };
@@ -89,6 +95,9 @@
 				303E687A2642B321006447A2 /* Int.swift */,
 				303E687C2642B34B006447A2 /* SwiftPersianTools.swift */,
 				30EE1A832646823200FBCC87 /* CurrencySymbol.swift */,
+				3027971D26773985004FA9BB /* ProvincesCode.swift */,
+				3027971F267742D9004FA9BB /* CityCode.swift */,
+				30279721267743FF004FA9BB /* PlaceByNationalId.swift */,
 			);
 			path = SwiftPersianTools;
 			sourceTree = "<group>";
@@ -213,8 +222,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30279722267743FF004FA9BB /* PlaceByNationalId.swift in Sources */,
 				30EE1A842646823200FBCC87 /* CurrencySymbol.swift in Sources */,
+				30279720267742D9004FA9BB /* CityCode.swift in Sources */,
 				303E687D2642B34B006447A2 /* SwiftPersianTools.swift in Sources */,
+				3027971E26773985004FA9BB /* ProvincesCode.swift in Sources */,
 				303E68792642AFD6006447A2 /* String.swift in Sources */,
 				303E687B2642B321006447A2 /* Int.swift in Sources */,
 			);
