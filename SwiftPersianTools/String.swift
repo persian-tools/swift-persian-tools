@@ -68,4 +68,62 @@ public extension String {
 
         return sum < 2 ? check == sum : check + sum == 11
     }
+
+    func verifyCardNumber() -> Bool {
+        if self.count < 16 {
+            return false
+        }
+
+        var radix = 0
+        var subDigit = 0
+        var sum = 0
+        var index = 0
+
+        for number in self {
+            radix = index % 2 == 0 ? 2: 1
+            guard let intNumber = Int("\(number)") else {
+                return false
+            }
+            subDigit = intNumber * radix
+            sum += subDigit > 9 ? subDigit - 9: subDigit
+
+            index += 1
+        }
+
+        return sum % 10 == 0
+    }
+
+    func getPlaceByIranNationalId() -> PlaceByNationalId? {
+        if self.count == 10 {
+
+            guard let code = Int(self.prefix(3)) else {
+                return nil
+            }
+
+            let cityByNationalId = CityCode().cities.filter { city in
+                if city.code.contains(code) {
+                    return true
+                }
+
+                return false
+            }
+
+            guard let findCity = cityByNationalId.first else {
+                return nil
+            }
+
+            let province = ProvincesCode().provinces.filter { province in
+                if province.id == findCity.parentId {
+                    return true
+                }
+
+                return false
+            }.first
+
+            return PlaceByNationalId(code: findCity.code, city: findCity.city, province: province?.province ?? "")
+
+        }
+
+        return nil
+    }
 }

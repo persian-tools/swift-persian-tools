@@ -43,4 +43,21 @@ class TestStringExtension: XCTestCase {
         codeMelli = "0684159415"
         XCTAssertFalse(codeMelli.isValidIranianNationallCode())
     }
+
+    func testVerifyCardNumber() throws {
+        var cardNumber = "6037701689095443"
+        XCTAssertTrue(cardNumber.verifyCardNumber())
+
+        cardNumber = "6219861034529007"
+        XCTAssertTrue(cardNumber.verifyCardNumber())
+
+        cardNumber = "6219861034529008"
+        XCTAssertFalse(cardNumber.verifyCardNumber())
+    }
+
+    func testGetPlaceByNationalId() throws {
+        var nationalId = "0499370899"
+        var findPlace = nationalId.getPlaceByIranNationalId()
+        XCTAssertEqual(findPlace?.city, "شهرری")
+    }
 }
