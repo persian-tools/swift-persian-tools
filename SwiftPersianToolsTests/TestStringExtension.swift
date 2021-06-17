@@ -17,6 +17,10 @@ class TestStringExtension: XCTestCase {
         stringNumber = "۲٫۱۰۰"
 
         XCTAssertEqual(stringNumber.removeComma(), "۲۱۰۰")
+
+        stringNumber = "23456"
+        stringNumber = stringNumber.addComma() ?? ""
+        XCTAssertEqual(stringNumber.removeComma(), "۲۳۴۵۶")
     }
 
     func testAddComma() throws {
