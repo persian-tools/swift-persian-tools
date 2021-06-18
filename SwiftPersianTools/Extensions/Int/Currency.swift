@@ -1,18 +1,13 @@
 //
-//  Int.swift
+//  Currency.swift
 //  SwiftPersianTools
 //
-//  Created by Saeed on 5/5/21.
+//  Created by Saeed on 6/18/21.
 //
 
 import Foundation
 
 public extension Int {
-
-    func convertToPersianText() -> String? {
-        return SwiftPersianTools.convertNumberToPersianText(inputNumber: NSNumber(integerLiteral: self))
-    }
-
     func convertToCommaSeperatedCurrency(symbol: CurrencySymbol) -> String {
         switch symbol {
         case .IRR, .Toman:
@@ -24,6 +19,4 @@ public extension Int {
         }
 
     }
-
-    
 }
