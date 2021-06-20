@@ -64,4 +64,12 @@ class TestStringExtension: XCTestCase {
         var findPlace = nationalId.getPlaceByIranNationalId()
         XCTAssertEqual(findPlace?.city, "شهرری")
     }
+
+    func testValidateSheba() throws {
+        var sheba = "IR820540102680020817909002"
+        XCTAssertTrue(sheba.validateIranianSheba())
+
+        sheba = "IR01234567890123456789"
+        XCTAssertFalse(sheba.validateIranianSheba())
+    }
 }
