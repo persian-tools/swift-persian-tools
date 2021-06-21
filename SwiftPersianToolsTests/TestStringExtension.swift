@@ -1,9 +1,6 @@
 //
 //  TestStringExtension.swift
 //  SwiftPersianToolsTests
-//
-//  Created by Saeed on 5/10/21.
-//
 
 import XCTest
 
