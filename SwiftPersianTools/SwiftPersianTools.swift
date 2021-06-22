@@ -33,7 +33,7 @@ internal class SwiftPersianTools {
     }
 
     class func removeComma(from input: String) -> String {
-        return input.replacingOccurrences(of: ",", with: "").replacingOccurrences(of: "٫", with: "")
+        return input.replacingOccurrences(of: ",", with: "").replacingOccurrences(of: "٫", with: "").replacingOccurrences(of: "٬", with: "")
     }
 
     class func addComma(to input: String) -> String? {

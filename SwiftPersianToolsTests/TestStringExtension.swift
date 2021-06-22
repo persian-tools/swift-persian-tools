@@ -1,9 +1,6 @@
 //
 //  TestStringExtension.swift
 //  SwiftPersianToolsTests
-//
-//  Created by Saeed on 5/10/21.
-//
 
 import XCTest
 
@@ -17,6 +14,10 @@ class TestStringExtension: XCTestCase {
         stringNumber = "۲٫۱۰۰"
 
         XCTAssertEqual(stringNumber.removeComma(), "۲۱۰۰")
+
+        stringNumber = "23456"
+        stringNumber = stringNumber.addComma() ?? ""
+        XCTAssertEqual(stringNumber.removeComma(), "۲۳۴۵۶")
     }
 
     func testAddComma() throws {
@@ -57,7 +58,35 @@ class TestStringExtension: XCTestCase {
 
     func testGetPlaceByNationalId() throws {
         var nationalId = "0499370899"
-        var findPlace = nationalId.getPlaceByIranNationalId()
-        XCTAssertEqual(findPlace?.city, "شهرری")
+        XCTAssertEqual(nationalId.getPlaceByIranNationalId()?.city, "شهرری")
+
+        nationalId = "0790419904"
+        XCTAssertEqual(nationalId.getPlaceByIranNationalId()?.city, "سبزوار")
+
+        XCTAssertEqual("0084575948".getPlaceByIranNationalId()?.city, "تهران مرکزی")
+
+        XCTAssertEqual("0060495219".getPlaceByIranNationalId()?.city, "تهران مرکزی")
+
+        XCTAssertEqual("0084545943".getPlaceByIranNationalId()?.city, "تهران مرکزی")
+
+        XCTAssertEqual("0671658506".getPlaceByIranNationalId()?.city, "بجنورد")
+
+        XCTAssertEqual("0671658506".getPlaceByIranNationalId()?.city, "بجنورد")
+
+        XCTAssertEqual("0643005846".getPlaceByIranNationalId()?.city, "بیرجند")
+
+        XCTAssertEqual("0906582709".getPlaceByIranNationalId()?.city, "کاشمر")
+
+        XCTAssertEqual("0451727304".getPlaceByIranNationalId()?.city, "شمیران")
+
+        XCTAssertEqual("0371359058".getPlaceByIranNationalId()?.city, "قم")
+    }
+
+    func testValidateSheba() throws {
+        var sheba = "IR820540102680020817909002"
+        XCTAssertTrue(sheba.validateIranianSheba())
+
+        sheba = "IR01234567890123456789"
+        XCTAssertFalse(sheba.validateIranianSheba())
     }
 }
