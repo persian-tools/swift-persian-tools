@@ -89,4 +89,10 @@ class TestStringExtension: XCTestCase {
         sheba = "IR01234567890123456789"
         XCTAssertFalse(sheba.validateIranianSheba())
     }
+
+    func testConvertEntoFa() throws {
+        XCTAssertEqual("123۴۵۶".digitsEntoFa(), "۱۲۳۴۵۶")
+        XCTAssertEqual("٤٥٦".digitsEntoFa(), "٤٥٦")
+        XCTAssertEqual("12۴۵۶3".digitsEntoFa(), "۱۲۴۵۶۳")
+    }
 }
