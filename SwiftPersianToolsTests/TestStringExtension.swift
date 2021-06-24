@@ -94,5 +94,9 @@ class TestStringExtension: XCTestCase {
         XCTAssertEqual("123۴۵۶".digitsEntoFa(), "۱۲۳۴۵۶")
         XCTAssertEqual("٤٥٦".digitsEntoFa(), "٤٥٦")
         XCTAssertEqual("12۴۵۶3".digitsEntoFa(), "۱۲۴۵۶۳")
+
+        XCTAssertEqual("1234567891".digitsEntoAr(), "۱۲۳٤٥٦۷۸۹۱")
+        XCTAssertEqual("123٤٥٦".digitsEntoAr(), "۱۲۳٤٥٦")
+
     }
 }

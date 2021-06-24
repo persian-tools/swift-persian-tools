@@ -14,4 +14,11 @@ public extension String {
         englishNumbers.map { result = result.replacingOccurrences(of: $0, with: $1)}
         return result
     }
+
+    func digitsEntoAr() -> String {
+        let englishNumbers = ["0": "۰","1": "۱","2": "۲","3": "۳","4": "٤","5": "٥","6": "٦","7": "۷","8": "۸","9": "۹"]
+        var result = self
+        englishNumbers.map { result = result.replacingOccurrences(of: $0, with: $1)}
+        return result
+    }
 }
