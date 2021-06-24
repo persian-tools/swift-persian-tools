@@ -102,5 +102,11 @@ class TestStringExtension: XCTestCase {
         XCTAssertEqual("456".digitsFatoEn(), "456")
         XCTAssertEqual("۱۲۴۵۶۳".digitsFatoEn(), "124563")
 
+        XCTAssertEqual("٠١٢٣٤٥٦٧٨٩".digitsArtoFa(), "٠١٢٣۴۵۶٧٨٩")
+        XCTAssertEqual("۸۹123۴٥".digitsArtoFa(), "۸۹123۴۵")
+        XCTAssertEqual("Text ٠١٢٣٤٥٦٧٨٩".digitsArtoFa(), "Text ٠١٢٣۴۵۶٧٨٩")
+
+        XCTAssertEqual("۰۱۲۳٤٥٦۷۸۹".digitsArtoEn(), "0123456789")
+        XCTAssertEqual("۸۹123٤٥".digitsArtoEn(), "8912345")
     }
 }
