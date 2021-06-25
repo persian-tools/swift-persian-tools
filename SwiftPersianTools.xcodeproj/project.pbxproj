@@ -10,6 +10,7 @@
 		3027971E26773985004FA9BB /* ProvincesCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027971D26773985004FA9BB /* ProvincesCode.swift */; };
 		30279720267742D9004FA9BB /* CityCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027971F267742D9004FA9BB /* CityCode.swift */; };
 		30279722267743FF004FA9BB /* PlaceByNationalId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30279721267743FF004FA9BB /* PlaceByNationalId.swift */; };
+		3030E98726834A8F00AA6F64 /* ConvertNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3030E98626834A8F00AA6F64 /* ConvertNumber.swift */; };
 		303E687D2642B34B006447A2 /* SwiftPersianTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303E687C2642B34B006447A2 /* SwiftPersianTools.swift */; };
 		303E687F2642B4DF006447A2 /* TestIntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303E687E2642B4DF006447A2 /* TestIntExtension.swift */; };
 		303FE7CD267E23EE0067F127 /* Sheba.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303FE7CC267E23EE0067F127 /* Sheba.swift */; };
@@ -41,6 +42,7 @@
 		3027971D26773985004FA9BB /* ProvincesCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvincesCode.swift; sourceTree = "<group>"; };
 		3027971F267742D9004FA9BB /* CityCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCode.swift; sourceTree = "<group>"; };
 		30279721267743FF004FA9BB /* PlaceByNationalId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceByNationalId.swift; sourceTree = "<group>"; };
+		3030E98626834A8F00AA6F64 /* ConvertNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertNumber.swift; sourceTree = "<group>"; };
 		303E687C2642B34B006447A2 /* SwiftPersianTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPersianTools.swift; sourceTree = "<group>"; };
 		303E687E2642B4DF006447A2 /* TestIntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestIntExtension.swift; sourceTree = "<group>"; };
 		303FE7CC267E23EE0067F127 /* Sheba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheba.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				305A3041267D131800CC3C15 /* VerifyCardNumber.swift */,
 				305A3043267D13A300CC3C15 /* PersianPhoneNumber.swift */,
 				303FE7CC267E23EE0067F127 /* Sheba.swift */,
+				3030E98626834A8F00AA6F64 /* ConvertNumber.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3030E98726834A8F00AA6F64 /* ConvertNumber.swift in Sources */,
 				305A3047267D143400CC3C15 /* Currency.swift in Sources */,
 				30279722267743FF004FA9BB /* PlaceByNationalId.swift in Sources */,
 				30EE1A842646823200FBCC87 /* CurrencySymbol.swift in Sources */,
