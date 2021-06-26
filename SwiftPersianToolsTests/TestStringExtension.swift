@@ -54,6 +54,8 @@ class TestStringExtension: XCTestCase {
 
         cardNumber = "6219861034529008"
         XCTAssertFalse(cardNumber.verifyCardNumber())
+
+        XCTAssertFalse("6219861034529007002229988112233".verifyCardNumber())
     }
 
     func testGetPlaceByNationalId() throws {
