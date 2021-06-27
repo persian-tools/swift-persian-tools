@@ -19,12 +19,16 @@
 		305A303F267D121300CC3C15 /* GetPlaceByIranNationalId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305A303E267D121300CC3C15 /* GetPlaceByIranNationalId.swift */; };
 		305A3042267D131800CC3C15 /* VerifyCardNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305A3041267D131800CC3C15 /* VerifyCardNumber.swift */; };
 		305A3044267D13A300CC3C15 /* PersianPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305A3043267D13A300CC3C15 /* PersianPhoneNumber.swift */; };
-		305A3047267D143400CC3C15 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305A3046267D143400CC3C15 /* Currency.swift */; };
+		305A3047267D143400CC3C15 /* CurrencyCommas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305A3046267D143400CC3C15 /* CurrencyCommas.swift */; };
 		305A3049267D147F00CC3C15 /* ConvertToPersian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305A3048267D147F00CC3C15 /* ConvertToPersian.swift */; };
 		3073BB0226401EA100D1C289 /* SwiftPersianTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3073BAF826401EA100D1C289 /* SwiftPersianTools.framework */; };
 		3073BB0726401EA100D1C289 /* SwiftPersianToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073BB0626401EA100D1C289 /* SwiftPersianToolsTests.swift */; };
 		3073BB0926401EA100D1C289 /* SwiftPersianTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 3073BAFB26401EA100D1C289 /* SwiftPersianTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30D4618F264A5A9E0030458B /* TestStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D4618E264A5A9E0030458B /* TestStringExtension.swift */; };
+		30EA902426882D3500746AFC /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA902326882D3500746AFC /* Bill.swift */; };
+		30EA902826882D4F00746AFC /* BillType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA902726882D4F00746AFC /* BillType.swift */; };
+		30EA902C268830A700746AFC /* BillResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA902B268830A700746AFC /* BillResult.swift */; };
+		30EA90302688335600746AFC /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA902F2688335600746AFC /* Currency.swift */; };
 		30EE1A842646823200FBCC87 /* CurrencySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EE1A832646823200FBCC87 /* CurrencySymbol.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +55,7 @@
 		305A303E267D121300CC3C15 /* GetPlaceByIranNationalId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlaceByIranNationalId.swift; sourceTree = "<group>"; };
 		305A3041267D131800CC3C15 /* VerifyCardNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyCardNumber.swift; sourceTree = "<group>"; };
 		305A3043267D13A300CC3C15 /* PersianPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersianPhoneNumber.swift; sourceTree = "<group>"; };
-		305A3046267D143400CC3C15 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		305A3046267D143400CC3C15 /* CurrencyCommas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCommas.swift; sourceTree = "<group>"; };
 		305A3048267D147F00CC3C15 /* ConvertToPersian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertToPersian.swift; sourceTree = "<group>"; };
 		3073BAF826401EA100D1C289 /* SwiftPersianTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPersianTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3073BAFB26401EA100D1C289 /* SwiftPersianTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftPersianTools.h; sourceTree = "<group>"; };
@@ -60,6 +64,10 @@
 		3073BB0626401EA100D1C289 /* SwiftPersianToolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPersianToolsTests.swift; sourceTree = "<group>"; };
 		3073BB0826401EA100D1C289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30D4618E264A5A9E0030458B /* TestStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStringExtension.swift; sourceTree = "<group>"; };
+		30EA902326882D3500746AFC /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		30EA902726882D4F00746AFC /* BillType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillType.swift; sourceTree = "<group>"; };
+		30EA902B268830A700746AFC /* BillResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillResult.swift; sourceTree = "<group>"; };
+		30EA902F2688335600746AFC /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		30EE1A832646823200FBCC87 /* CurrencySymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySymbol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,7 +127,7 @@
 		305A3045267D13FC00CC3C15 /* Int */ = {
 			isa = PBXGroup;
 			children = (
-				305A3046267D143400CC3C15 /* Currency.swift */,
+				305A3046267D143400CC3C15 /* CurrencyCommas.swift */,
 				30EE1A832646823200FBCC87 /* CurrencySymbol.swift */,
 				305A3048267D147F00CC3C15 /* ConvertToPersian.swift */,
 			);
@@ -147,6 +155,7 @@
 		3073BAFA26401EA100D1C289 /* SwiftPersianTools */ = {
 			isa = PBXGroup;
 			children = (
+				30EA902226882D2300746AFC /* Bill */,
 				305A3038267D0ED800CC3C15 /* Extensions */,
 				3073BAFB26401EA100D1C289 /* SwiftPersianTools.h */,
 				3073BAFC26401EA100D1C289 /* Info.plist */,
@@ -164,6 +173,17 @@
 				3073BB0826401EA100D1C289 /* Info.plist */,
 			);
 			path = SwiftPersianToolsTests;
+			sourceTree = "<group>";
+		};
+		30EA902226882D2300746AFC /* Bill */ = {
+			isa = PBXGroup;
+			children = (
+				30EA902326882D3500746AFC /* Bill.swift */,
+				30EA902726882D4F00746AFC /* BillType.swift */,
+				30EA902B268830A700746AFC /* BillResult.swift */,
+				30EA902F2688335600746AFC /* Currency.swift */,
+			);
+			path = Bill;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,8 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30EA90302688335600746AFC /* Currency.swift in Sources */,
 				3030E98726834A8F00AA6F64 /* ConvertNumber.swift in Sources */,
-				305A3047267D143400CC3C15 /* Currency.swift in Sources */,
+				30EA902426882D3500746AFC /* Bill.swift in Sources */,
+				305A3047267D143400CC3C15 /* CurrencyCommas.swift in Sources */,
 				30279722267743FF004FA9BB /* PlaceByNationalId.swift in Sources */,
 				30EE1A842646823200FBCC87 /* CurrencySymbol.swift in Sources */,
 				303FE7CD267E23EE0067F127 /* Sheba.swift in Sources */,
@@ -288,6 +310,8 @@
 				305A303D267D114500CC3C15 /* NationalId.swift in Sources */,
 				3027971E26773985004FA9BB /* ProvincesCode.swift in Sources */,
 				305A3042267D131800CC3C15 /* VerifyCardNumber.swift in Sources */,
+				30EA902C268830A700746AFC /* BillResult.swift in Sources */,
+				30EA902826882D4F00746AFC /* BillType.swift in Sources */,
 				305A303B267D10F100CC3C15 /* Commas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
