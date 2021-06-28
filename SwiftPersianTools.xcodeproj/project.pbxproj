@@ -24,6 +24,11 @@
 		3073BB0226401EA100D1C289 /* SwiftPersianTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3073BAF826401EA100D1C289 /* SwiftPersianTools.framework */; };
 		3073BB0726401EA100D1C289 /* SwiftPersianToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073BB0626401EA100D1C289 /* SwiftPersianToolsTests.swift */; };
 		3073BB0926401EA100D1C289 /* SwiftPersianTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 3073BAFB26401EA100D1C289 /* SwiftPersianTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30C60C1D26899958001432BA /* TestBillCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C60C1C26899958001432BA /* TestBillCalculator.swift */; };
+		30C60C1E268999C9001432BA /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA902326882D3500746AFC /* Bill.swift */; };
+		30C60C1F268999E0001432BA /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA902F2688335600746AFC /* Currency.swift */; };
+		30C60C20268999E3001432BA /* BillType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA902726882D4F00746AFC /* BillType.swift */; };
+		30C60C21268999E3001432BA /* BillResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA902B268830A700746AFC /* BillResult.swift */; };
 		30D4618F264A5A9E0030458B /* TestStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D4618E264A5A9E0030458B /* TestStringExtension.swift */; };
 		30EA902426882D3500746AFC /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA902326882D3500746AFC /* Bill.swift */; };
 		30EA902826882D4F00746AFC /* BillType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA902726882D4F00746AFC /* BillType.swift */; };
@@ -63,6 +68,7 @@
 		3073BB0126401EA100D1C289 /* SwiftPersianToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPersianToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3073BB0626401EA100D1C289 /* SwiftPersianToolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPersianToolsTests.swift; sourceTree = "<group>"; };
 		3073BB0826401EA100D1C289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30C60C1C26899958001432BA /* TestBillCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBillCalculator.swift; sourceTree = "<group>"; };
 		30D4618E264A5A9E0030458B /* TestStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStringExtension.swift; sourceTree = "<group>"; };
 		30EA902326882D3500746AFC /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 		30EA902726882D4F00746AFC /* BillType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillType.swift; sourceTree = "<group>"; };
@@ -167,6 +173,7 @@
 		3073BB0526401EA100D1C289 /* SwiftPersianToolsTests */ = {
 			isa = PBXGroup;
 			children = (
+				30C60C1C26899958001432BA /* TestBillCalculator.swift */,
 				30D4618E264A5A9E0030458B /* TestStringExtension.swift */,
 				303E687E2642B4DF006447A2 /* TestIntExtension.swift */,
 				3073BB0626401EA100D1C289 /* SwiftPersianToolsTests.swift */,
@@ -320,7 +327,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30C60C1F268999E0001432BA /* Currency.swift in Sources */,
+				30C60C20268999E3001432BA /* BillType.swift in Sources */,
+				30C60C1D26899958001432BA /* TestBillCalculator.swift in Sources */,
+				30C60C1E268999C9001432BA /* Bill.swift in Sources */,
 				3073BB0726401EA100D1C289 /* SwiftPersianToolsTests.swift in Sources */,
+				30C60C21268999E3001432BA /* BillResult.swift in Sources */,
 				30D4618F264A5A9E0030458B /* TestStringExtension.swift in Sources */,
 				303E687F2642B4DF006447A2 /* TestIntExtension.swift in Sources */,
 			);
