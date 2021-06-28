@@ -11,7 +11,11 @@ protocol BillCalculator {
 
     func getType() -> String
 
-    func getResult() -> BillResult?
+    func getResult() -> BillResult
+
+    func verifyBillId() -> Bool
+
+    func verifyBillPayment() -> Bool
 }
 
 public struct Bill {
@@ -31,22 +35,6 @@ public struct Bill {
         let billTypeCollection: [Int: BillTypes] = [1: .water, 2: .electricity, 3: .gas, 4: .phone, 5: .mobile, 6: .tax, 8: .taxOrganization, 9: .trafficCrimes]
 
         return billTypeCollection[index]?.rawValue ?? BillTypes.unknown.rawValue
-    }
-
-    func verifyBillPayment() -> Bool {
-        if billPayment.count < 6 {
-            return false
-        }
-
-        let firstControlBit = Array(billPayment)[billPayment.count - 2]
-        let secondControlBit = Array(billPayment)[billPayment.count - 1]
-        var paymentId: String = String(billPayment.prefix(billPayment.count - 2))
-        if calTheBit(number: paymentId) == Int(firstControlBit.lowercased())
-            && calTheBit(number: "\(billId)\(paymentId)\(firstControlBit)") == Int(secondControlBit.lowercased()) {
-            return true
-        }
-
-        return false
     }
 
     fileprivate func calTheBit(number: String) -> Int {
@@ -79,6 +67,10 @@ public struct Bill {
 
         return sum
     }
+
+    fileprivate func verifyBill() -> Bool {
+        return verifyBillPayment() && verifyBillId()
+    }
 }
 
 extension Bill: BillCalculator {
@@ -102,9 +94,46 @@ extension Bill: BillCalculator {
         return findBillTypeByIndex(index: billType)
     }
 
+    func verifyBillPayment() -> Bool {
+        if billPayment.count < 6 {
+            return false
+        }
 
+        let firstControlBit = Array(billPayment)[billPayment.count - 2]
+        let secondControlBit = Array(billPayment)[billPayment.count - 1]
+        let paymentId: String = String(billPayment.prefix(billPayment.count - 2))
+        if calTheBit(number: paymentId) == Int(firstControlBit.lowercased())
+            && calTheBit(number: "\(billId)\(paymentId)\(firstControlBit)") == Int(secondControlBit.lowercased()) {
+            return true
+        }
 
-    func getResult() -> BillResult? {
-        return nil
+        return false
+    }
+
+    func verifyBillId() -> Bool {
+        var result = false
+        if billId.count < 6 {
+            result = false
+        }
+
+        let controlBit = Array(billPayment)[billPayment.count - 1]
+        let newBillId: String = String(billId.prefix(billPayment.count - 1))
+
+        if calTheBit(number: newBillId) == Int(controlBit.lowercased()) {
+            result = true
+        }
+
+        let type = self.getType()
+
+        return result && type != BillTypes.unknown.rawValue
+    }
+
+    func getResult() -> BillResult {
+        return BillResult(amount: self.getAmount(),
+                          type: self.getType(),
+                          barcode: self.getBarcode(),
+                          isValid: self.verifyBill(),
+                          isValidBillId: self.verifyBillId(),
+                          isValidBillPayment: self.verifyBillPayment())
     }
 }
