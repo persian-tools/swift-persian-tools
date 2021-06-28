@@ -1,9 +1,6 @@
 //
 //  TestBillCalculator.swift
 //  SwiftPersianToolsTests
-//
-//  Created by Saeed on 6/27/21.
-//
 
 import XCTest
 
@@ -32,5 +29,21 @@ class TestBillCalculator: XCTestCase {
 
         bill.billId = "7748317800105"
         XCTAssertEqual(bill.getType(), BillTypes.unknown.rawValue)
+    }
+
+    func testGetBarcode() throws {
+        var bill = Bill(billId: "7748317800142", billPayment: "1770160")
+        XCTAssertEqual(bill.getBarcode(), "77483178001420001770160")
+
+        bill = Bill(billId: "9174639504124", billPayment: "12908197")
+        XCTAssertEqual(bill.getBarcode(), "917463950412400012908197")
+    }
+
+    func testVerifyBillPayment() throws {
+        var bill = Bill(billId: "7748317800142", billPayment: "1770160")
+        XCTAssertTrue(bill.verifyBillPayment())
+
+        bill = Bill(billId: "9174639504124", billPayment: "12908197")
+        XCTAssertFalse(bill.verifyBillPayment())
     }
 }
