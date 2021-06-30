@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SwiftPersianTools"
-  spec.version      = "1.0.0"
+  spec.version      = "1.1.0"
   spec.summary      = "An anthology of a variety of tools for the Persian language in swift"
 
   # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
 a framework of a variety of tools for the Persian language in swift, convert numbers, add pricing, ...                  			
 			DESC
 
-  spec.homepage     = "https://github.com/saeed-rz/swift-persian-tools"
+  spec.homepage     = "https://github.com/persian-tools/swift-persian-tools"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -65,7 +65,7 @@ a framework of a variety of tools for the Persian language in swift, convert num
   #
 
   # spec.platform     = :ios
-  spec.platform     = :ios, "13.0"
+  spec.platform     = :ios, "12.0"
   spec.swift_version = "5.0"
 
   #  When using multiple platforms
@@ -81,7 +81,7 @@ a framework of a variety of tools for the Persian language in swift, convert num
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/saeed-rz/swift-persian-tools.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/persian-tools/swift-persian-tools.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
