@@ -10,6 +10,7 @@
 		3027971E26773985004FA9BB /* ProvincesCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027971D26773985004FA9BB /* ProvincesCode.swift */; };
 		30279720267742D9004FA9BB /* CityCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027971F267742D9004FA9BB /* CityCode.swift */; };
 		30279722267743FF004FA9BB /* PlaceByNationalId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30279721267743FF004FA9BB /* PlaceByNationalId.swift */; };
+		30284D5026AB169900EB0449 /* ShebaResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30284D4F26AB169900EB0449 /* ShebaResult.swift */; };
 		3030E98726834A8F00AA6F64 /* ConvertNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3030E98626834A8F00AA6F64 /* ConvertNumber.swift */; };
 		303E687D2642B34B006447A2 /* SwiftPersianTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303E687C2642B34B006447A2 /* SwiftPersianTools.swift */; };
 		303E687F2642B4DF006447A2 /* TestIntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303E687E2642B4DF006447A2 /* TestIntExtension.swift */; };
@@ -24,6 +25,7 @@
 		3073BB0226401EA100D1C289 /* SwiftPersianTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3073BAF826401EA100D1C289 /* SwiftPersianTools.framework */; };
 		3073BB0726401EA100D1C289 /* SwiftPersianToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073BB0626401EA100D1C289 /* SwiftPersianToolsTests.swift */; };
 		3073BB0926401EA100D1C289 /* SwiftPersianTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 3073BAFB26401EA100D1C289 /* SwiftPersianTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3090244826ABFEC700345F45 /* BankCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3090244726ABFEC700345F45 /* BankCode.swift */; };
 		30C60C1D26899958001432BA /* TestBillCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C60C1C26899958001432BA /* TestBillCalculator.swift */; };
 		30C60C1E268999C9001432BA /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA902326882D3500746AFC /* Bill.swift */; };
 		30C60C1F268999E0001432BA /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA902F2688335600746AFC /* Currency.swift */; };
@@ -51,6 +53,7 @@
 		3027971D26773985004FA9BB /* ProvincesCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvincesCode.swift; sourceTree = "<group>"; };
 		3027971F267742D9004FA9BB /* CityCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCode.swift; sourceTree = "<group>"; };
 		30279721267743FF004FA9BB /* PlaceByNationalId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceByNationalId.swift; sourceTree = "<group>"; };
+		30284D4F26AB169900EB0449 /* ShebaResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShebaResult.swift; sourceTree = "<group>"; };
 		3030E98626834A8F00AA6F64 /* ConvertNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertNumber.swift; sourceTree = "<group>"; };
 		303E687C2642B34B006447A2 /* SwiftPersianTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPersianTools.swift; sourceTree = "<group>"; };
 		303E687E2642B4DF006447A2 /* TestIntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestIntExtension.swift; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		3073BB0126401EA100D1C289 /* SwiftPersianToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPersianToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3073BB0626401EA100D1C289 /* SwiftPersianToolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPersianToolsTests.swift; sourceTree = "<group>"; };
 		3073BB0826401EA100D1C289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3090244726ABFEC700345F45 /* BankCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCode.swift; sourceTree = "<group>"; };
 		30C60C1C26899958001432BA /* TestBillCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBillCalculator.swift; sourceTree = "<group>"; };
 		30D4618E264A5A9E0030458B /* TestStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStringExtension.swift; sourceTree = "<group>"; };
 		30EA902326882D3500746AFC /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
@@ -96,6 +100,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30284D4E26AB168700EB0449 /* Sheba */ = {
+			isa = PBXGroup;
+			children = (
+				303FE7CC267E23EE0067F127 /* Sheba.swift */,
+				30284D4F26AB169900EB0449 /* ShebaResult.swift */,
+				3090244726ABFEC700345F45 /* BankCode.swift */,
+			);
+			path = Sheba;
+			sourceTree = "<group>";
+		};
 		305A3038267D0ED800CC3C15 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,12 +122,12 @@
 		305A3039267D0EF000CC3C15 /* String */ = {
 			isa = PBXGroup;
 			children = (
+				30284D4E26AB168700EB0449 /* Sheba */,
 				305A3040267D123900CC3C15 /* GetPlaceByIranNationalId */,
 				305A303A267D10F100CC3C15 /* Commas.swift */,
 				305A303C267D114500CC3C15 /* NationalId.swift */,
 				305A3041267D131800CC3C15 /* VerifyCardNumber.swift */,
 				305A3043267D13A300CC3C15 /* PersianPhoneNumber.swift */,
-				303FE7CC267E23EE0067F127 /* Sheba.swift */,
 				3030E98626834A8F00AA6F64 /* ConvertNumber.swift */,
 			);
 			path = String;
@@ -304,7 +318,9 @@
 			files = (
 				30EA90302688335600746AFC /* Currency.swift in Sources */,
 				3030E98726834A8F00AA6F64 /* ConvertNumber.swift in Sources */,
+				30284D5026AB169900EB0449 /* ShebaResult.swift in Sources */,
 				30EA902426882D3500746AFC /* Bill.swift in Sources */,
+				3090244826ABFEC700345F45 /* BankCode.swift in Sources */,
 				305A3047267D143400CC3C15 /* CurrencyCommas.swift in Sources */,
 				30279722267743FF004FA9BB /* PlaceByNationalId.swift in Sources */,
 				30EE1A842646823200FBCC87 /* CurrencySymbol.swift in Sources */,
