@@ -116,4 +116,9 @@ class TestStringExtension: XCTestCase {
         let sheba = "IR820540102680020817909002"
         XCTAssertTrue(sheba.recognizeBankInfo()?.code == "054")
     }
+
+    func testFindBankFromCardNumber() throws {
+        let cardNumber = "6219861034529007"
+        XCTAssertTrue(cardNumber.getBankNameFromCardNumber() == "بانک سامان")
+    }
 }
