@@ -29,3 +29,20 @@ public extension String {
         return remainder == 1
     }
 }
+
+public extension String {
+    func recognizeBankInfo() -> ShebaResult? {
+        if !self.validateIranianSheba() {
+            return nil
+        }
+
+        let bankCode = BankCode()
+        for bank in bankCode.bankCodes {
+            if self.contains(bank.key) {
+                return bank.value
+            }
+        }
+
+        return nil
+    }
+}

@@ -111,4 +111,14 @@ class TestStringExtension: XCTestCase {
         XCTAssertEqual("۰۱۲۳٤٥٦۷۸۹".digitsArtoEn(), "0123456789")
         XCTAssertEqual("۸۹123٤٥".digitsArtoEn(), "8912345")
     }
+
+    func testRecognizeBankFromSheba() throws {
+        let sheba = "IR820540102680020817909002"
+        XCTAssertTrue(sheba.recognizeBankInfo()?.code == "054")
+    }
+
+    func testFindBankFromCardNumber() throws {
+        let cardNumber = "6219861034529007"
+        XCTAssertTrue(cardNumber.getBankNameFromCardNumber() == "بانک سامان")
+    }
 }
