@@ -121,4 +121,9 @@ class TestStringExtension: XCTestCase {
         let cardNumber = "6219861034529007"
         XCTAssertTrue(cardNumber.getBankNameFromCardNumber() == "بانک سامان")
     }
+
+    func testTimeAgo() throws {
+        let cardNumber = "1400/05/09 17:55:00"
+        XCTAssert(cardNumber.timeAgo().isEmpty)
+    }
 }
