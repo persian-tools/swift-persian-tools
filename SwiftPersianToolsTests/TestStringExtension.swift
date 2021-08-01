@@ -121,4 +121,44 @@ class TestStringExtension: XCTestCase {
         let cardNumber = "6219861034529007"
         XCTAssertTrue(cardNumber.getBankNameFromCardNumber() == "بانک سامان")
     }
+
+    func testTimeAgo() throws {
+        let dateComponents: Set<Calendar.Component> = [Calendar.Component.year, Calendar.Component.month, Calendar.Component.day, Calendar.Component.hour, Calendar.Component.minute, Calendar.Component.second]
+        var testDate = Date(timeIntervalSinceNow: -50)
+        let calendar = Calendar(identifier: .persian)
+        var dateComponent = calendar.dateComponents(dateComponents, from: testDate)
+
+        var date = "\(dateComponent.year ?? 0)/\(dateComponent.month ?? 0)/\(dateComponent.day ?? 0) \(dateComponent.hour ?? 0):\(dateComponent.minute ?? 0):\(dateComponent.second ?? 0)"
+        XCTAssertEqual(date.timeAgo(), "⁨قبل⁩ در ۵۰ ثانیه")
+
+        testDate = Date(timeIntervalSinceNow: -300)
+        dateComponent = calendar.dateComponents(dateComponents, from: testDate)
+        date = "\(dateComponent.year ?? 0)/\(dateComponent.month ?? 0)/\(dateComponent.day ?? 0) \(dateComponent.hour ?? 0):\(dateComponent.minute ?? 0):\(dateComponent.second ?? 0)"
+        XCTAssertEqual(date.timeAgo(), "⁨قبل⁩ در ۵ دقیقه")
+
+        testDate = Date(timeIntervalSinceNow: 3700)
+        dateComponent = calendar.dateComponents(dateComponents, from: testDate)
+        date = "\(dateComponent.year ?? 0)/\(dateComponent.month ?? 0)/\(dateComponent.day ?? 0) \(dateComponent.hour ?? 0):\(dateComponent.minute ?? 0):\(dateComponent.second ?? 0)"
+        XCTAssertEqual(date.timeAgo(), "⁨بعد⁩ در ۱ ساعت")
+
+        testDate = Date(timeIntervalSinceNow: 87000)
+        dateComponent = calendar.dateComponents(dateComponents, from: testDate)
+        date = "\(dateComponent.year ?? 0)/\(dateComponent.month ?? 0)/\(dateComponent.day ?? 0) \(dateComponent.hour ?? 0):\(dateComponent.minute ?? 0):\(dateComponent.second ?? 0)"
+        XCTAssertEqual(date.timeAgo(), "⁨بعد⁩ حدود ۱ روز")
+
+        testDate = Date(timeIntervalSinceNow: 605800)
+        dateComponent = calendar.dateComponents(dateComponents, from: testDate)
+        date = "\(dateComponent.year ?? 0)/\(dateComponent.month ?? 0)/\(dateComponent.day ?? 0) \(dateComponent.hour ?? 0):\(dateComponent.minute ?? 0):\(dateComponent.second ?? 0)"
+        XCTAssertEqual(date.timeAgo(), "⁨بعد⁩ حدود ۱ هفته")
+
+        testDate = Date(timeIntervalSinceNow: 2610000)
+        dateComponent = calendar.dateComponents(dateComponents, from: testDate)
+        date = "\(dateComponent.year ?? 0)/\(dateComponent.month ?? 0)/\(dateComponent.day ?? 0) \(dateComponent.hour ?? 0):\(dateComponent.minute ?? 0):\(dateComponent.second ?? 0)"
+        XCTAssertEqual(date.timeAgo(), "⁨بعد⁩ حدود ۱ ماه")
+
+        testDate = Date(timeIntervalSinceNow: 31755000)
+        dateComponent = calendar.dateComponents(dateComponents, from: testDate)
+        date = "\(dateComponent.year ?? 0)/\(dateComponent.month ?? 0)/\(dateComponent.day ?? 0) \(dateComponent.hour ?? 0):\(dateComponent.minute ?? 0):\(dateComponent.second ?? 0)"
+        XCTAssertEqual(date.timeAgo(), "⁨بعد⁩ حدود ۱ سال")
+    }
 }
