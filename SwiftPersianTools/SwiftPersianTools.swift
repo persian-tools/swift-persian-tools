@@ -9,6 +9,13 @@ import Foundation
 
 internal class SwiftPersianTools {
 
+    static let minute = 60
+    static let hour = minute * minute
+    static let day = hour * 24
+    static let week = day * 7
+    static let month = day * 30
+    static let year = day * 365
+
     class func convertNumberToPersianText(inputNumber: NSNumber) -> String? {
         let formatter = NumberFormatter()
         formatter.numberStyle = .spellOut
