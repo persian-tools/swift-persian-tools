@@ -18,6 +18,18 @@ public extension String {
         }
     }
 
+    func phoneNumberDetail() -> OperatorModel? {
+        if self.isPersianPhoneNumber() {
+
+        }
+
+        return nil
+    }
+
+    private func getPhonePrefix() {
+        
+    }
+
     func convertPersianNumberToEnglish() -> String {
         let returnString = self
             .replacingOccurrences(of: "۰", with: "0")
