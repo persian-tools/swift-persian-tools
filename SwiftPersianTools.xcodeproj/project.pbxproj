@@ -29,6 +29,7 @@
 		3090244826ABFEC700345F45 /* BankCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3090244726ABFEC700345F45 /* BankCode.swift */; };
 		30A31CB726AD9A8D00FB1287 /* GetBankNameFromCardNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A31CB626AD9A8D00FB1287 /* GetBankNameFromCardNumber.swift */; };
 		30A31CBB26AD9AC600FB1287 /* BanksCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A31CBA26AD9AC600FB1287 /* BanksCode.swift */; };
+		30AE491226D100D300BDAA50 /* OperatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AB4F926BE65B800B72932 /* OperatorModel.swift */; };
 		30C60C1D26899958001432BA /* TestBillCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C60C1C26899958001432BA /* TestBillCalculator.swift */; };
 		30C60C1E268999C9001432BA /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA902326882D3500746AFC /* Bill.swift */; };
 		30C60C1F268999E0001432BA /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA902F2688335600746AFC /* Currency.swift */; };
@@ -379,6 +380,7 @@
 				30C60C20268999E3001432BA /* BillType.swift in Sources */,
 				30C60C1D26899958001432BA /* TestBillCalculator.swift in Sources */,
 				30C60C1E268999C9001432BA /* Bill.swift in Sources */,
+				30AE491226D100D300BDAA50 /* OperatorModel.swift in Sources */,
 				3073BB0726401EA100D1C289 /* SwiftPersianToolsTests.swift in Sources */,
 				30C60C21268999E3001432BA /* BillResult.swift in Sources */,
 				30D4618F264A5A9E0030458B /* TestStringExtension.swift in Sources */,

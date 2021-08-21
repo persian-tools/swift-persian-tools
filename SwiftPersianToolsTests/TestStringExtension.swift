@@ -3,6 +3,7 @@
 //  SwiftPersianToolsTests
 
 import XCTest
+import SwiftPersianTools
 
 class TestStringExtension: XCTestCase {
 
@@ -160,5 +161,16 @@ class TestStringExtension: XCTestCase {
         dateComponent = calendar.dateComponents(dateComponents, from: testDate)
         date = "\(dateComponent.year ?? 0)/\(dateComponent.month ?? 0)/\(dateComponent.day ?? 0) \(dateComponent.hour ?? 0):\(dateComponent.minute ?? 0):\(dateComponent.second ?? 0)"
         XCTAssertEqual(date.timeAgo(), "⁨بعد⁩ حدود ۱ سال")
+    }
+
+    func testPhoneNumberDetail() throws {
+        var phoneNumber = "9891298567098"
+        XCTAssertTrue(phoneNumber.getPhoneNumberDetail()?.province.contains("قم") ?? false)
+
+        phoneNumber = "09022002580"
+        XCTAssertTrue(phoneNumber.getPhoneNumberDetail()?.operatorName.rawValue == Operators.Irancell.rawValue)
+
+        phoneNumber = "09981000000"
+        XCTAssertTrue(phoneNumber.getPhoneNumberDetail()?.operatorName.rawValue == Operators.ShatelMobile.rawValue)
     }
 }

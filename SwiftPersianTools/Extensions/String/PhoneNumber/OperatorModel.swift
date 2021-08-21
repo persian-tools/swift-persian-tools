@@ -1,22 +1,19 @@
 //
 //  OperatorModel.swift
 //  SwiftPersianTools
-//
-//  Created by Saeed on 8/7/21.
-//
 
 import Foundation
 
 public struct OperatorModel {
-    var province: [String]
-    var base: String
-    var model: String?
-    var type: [PhoneNumberType]
-    var prefix: String
-    var operatorName: Operators
+    public var province: [String]
+    public var base: String
+    public var model: String?
+    public var type: [PhoneNumberType]
+    public var prefix: String
+    public var operatorName: Operators
 }
 
-enum Operators: String {
+public enum Operators: String {
     case Irancell = "ایرانسل"
     case ShatelMobile = "شاتل موبایل"
     case MCI = "همراه اول"
@@ -24,7 +21,7 @@ enum Operators: String {
     case Rightel = "رایتل"
 }
 
-enum PhoneNumberType {
+public enum PhoneNumberType {
     case Permanent
     case Credit
 }
@@ -62,12 +59,41 @@ struct OperatorsList {
                                            type: [.Credit], prefix: "932", operatorName: .Taliya))
 
         operatorsList.append(OperatorModel(province: [], base: "کشوری", model: nil,
-                                           type: [.Permanent], prefix: "920", operatorName: .Taliya))
+                                           type: [.Permanent], prefix: "920", operatorName: .Rightel))
         operatorsList.append(OperatorModel(province: [], base: "کشوری", model: nil,
-                                           type: [.Credit], prefix: "921", operatorName: .Taliya))
+                                           type: [.Credit], prefix: "921", operatorName: .Rightel))
         operatorsList.append(OperatorModel(province: [], base: "کشوری", model: nil,
-                                           type: [.Credit], prefix: "922", operatorName: .Taliya))
+                                           type: [.Credit], prefix: "922", operatorName: .Rightel))
 
+        operatorsList.append(OperatorModel(province: [], base: "کشوری", model: "سیم‌کارت کودک",
+                                           type: [.Credit], prefix: "930", operatorName: .Irancell))
+        operatorsList.append(OperatorModel(province: [], base: "کشوری", model: "سیم‌کارت کودک",
+                                           type: [.Credit], prefix: "933", operatorName: .Irancell))
+        operatorsList.append(OperatorModel(province: [], base: "کشوری", model: "سیم‌کارت کودک",
+                                           type: [.Credit], prefix: "935", operatorName: .Irancell))
+        operatorsList.append(OperatorModel(province: [], base: "کشوری", model: "سیم‌کارت کودک",
+                                           type: [.Credit], prefix: "936", operatorName: .Irancell))
+        operatorsList.append(OperatorModel(province: [], base: "کشوری", model: "سیم‌کارت کودک",
+                                           type: [.Credit], prefix: "937", operatorName: .Irancell))
+        operatorsList.append(OperatorModel(province: [], base: "کشوری", model: "سیم‌کارت کودک",
+                                           type: [.Credit], prefix: "938", operatorName: .Irancell))
+        operatorsList.append(OperatorModel(province: [], base: "کشوری", model: "سیم‌کارت کودک",
+                                           type: [.Credit], prefix: "939", operatorName: .Irancell))
+        operatorsList.append(OperatorModel(province: [], base: "کشوری", model: "سیم‌کارت کودک",
+                                           type: [.Credit], prefix: "901", operatorName: .Irancell))
+        operatorsList.append(OperatorModel(province: [], base: "کشوری", model: "سیم‌کارت کودک",
+                                           type: [.Credit], prefix: "902", operatorName: .Irancell))
+        operatorsList.append(OperatorModel(province: [], base: "کشوری", model: "سیم‌کارت کودک",
+                                           type: [.Credit], prefix: "903", operatorName: .Irancell))
+        operatorsList.append(OperatorModel(province: [], base: "کشوری", model: "سیم‌کارت کودک",
+                                           type: [.Credit], prefix: "904", operatorName: .Irancell))
+        operatorsList.append(OperatorModel(province: [], base: "کشوری", model: "سیم‌کارت کودک",
+                                           type: [.Credit], prefix: "905", operatorName: .Irancell))
+
+        operatorsList.append(OperatorModel(province: [], base: "کشوری", model: "TD-LTE",
+                                           type: [.Credit], prefix: "941", operatorName: .Irancell))
+
+        operatorsList.append(OperatorModel(province: [], base: "کشوری", model: nil,
+                                           type: [.Credit], prefix: "998", operatorName: .ShatelMobile))
     }
 }
-
