@@ -30,6 +30,7 @@
 		30A31CB726AD9A8D00FB1287 /* GetBankNameFromCardNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A31CB626AD9A8D00FB1287 /* GetBankNameFromCardNumber.swift */; };
 		30A31CBB26AD9AC600FB1287 /* BanksCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A31CBA26AD9AC600FB1287 /* BanksCode.swift */; };
 		30AE491226D100D300BDAA50 /* OperatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AB4F926BE65B800B72932 /* OperatorModel.swift */; };
+		30BEBAEF26DBAB3E007EE734 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BEBAEE26DBAB3E007EE734 /* StringUtils.swift */; };
 		30C60C1D26899958001432BA /* TestBillCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C60C1C26899958001432BA /* TestBillCalculator.swift */; };
 		30C60C1E268999C9001432BA /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA902326882D3500746AFC /* Bill.swift */; };
 		30C60C1F268999E0001432BA /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA902F2688335600746AFC /* Currency.swift */; };
@@ -80,6 +81,7 @@
 		3090244726ABFEC700345F45 /* BankCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCode.swift; sourceTree = "<group>"; };
 		30A31CB626AD9A8D00FB1287 /* GetBankNameFromCardNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBankNameFromCardNumber.swift; sourceTree = "<group>"; };
 		30A31CBA26AD9AC600FB1287 /* BanksCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksCode.swift; sourceTree = "<group>"; };
+		30BEBAEE26DBAB3E007EE734 /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 		30C60C1C26899958001432BA /* TestBillCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBillCalculator.swift; sourceTree = "<group>"; };
 		30C6AED526B5D73E0043642A /* TimeAgo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAgo.swift; sourceTree = "<group>"; };
 		30D4618E264A5A9E0030458B /* TestStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStringExtension.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				305A303C267D114500CC3C15 /* NationalId.swift */,
 				3030E98626834A8F00AA6F64 /* ConvertNumber.swift */,
 				30C6AED526B5D73E0043642A /* TimeAgo.swift */,
+				30BEBAEE26DBAB3E007EE734 /* StringUtils.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				30EA902426882D3500746AFC /* Bill.swift in Sources */,
 				3090244826ABFEC700345F45 /* BankCode.swift in Sources */,
 				305A3047267D143400CC3C15 /* CurrencyCommas.swift in Sources */,
+				30BEBAEF26DBAB3E007EE734 /* StringUtils.swift in Sources */,
 				30279722267743FF004FA9BB /* PlaceByNationalId.swift in Sources */,
 				30EE1A842646823200FBCC87 /* CurrencySymbol.swift in Sources */,
 				30A31CBB26AD9AC600FB1287 /* BanksCode.swift in Sources */,
