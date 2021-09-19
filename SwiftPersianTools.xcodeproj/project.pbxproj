@@ -10,7 +10,6 @@
 		3027971E26773985004FA9BB /* ProvincesCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027971D26773985004FA9BB /* ProvincesCode.swift */; };
 		30279720267742D9004FA9BB /* CityCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027971F267742D9004FA9BB /* CityCode.swift */; };
 		30279722267743FF004FA9BB /* PlaceByNationalId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30279721267743FF004FA9BB /* PlaceByNationalId.swift */; };
-		30284D5026AB169900EB0449 /* ShebaResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30284D4F26AB169900EB0449 /* ShebaResult.swift */; };
 		3030E98726834A8F00AA6F64 /* ConvertNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3030E98626834A8F00AA6F64 /* ConvertNumber.swift */; };
 		303AB4FA26BE65B800B72932 /* OperatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AB4F926BE65B800B72932 /* OperatorModel.swift */; };
 		303E687D2642B34B006447A2 /* SwiftPersianTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303E687C2642B34B006447A2 /* SwiftPersianTools.swift */; };
@@ -43,6 +42,7 @@
 		30EA902C268830A700746AFC /* BillResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA902B268830A700746AFC /* BillResult.swift */; };
 		30EA90302688335600746AFC /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA902F2688335600746AFC /* Currency.swift */; };
 		30EE1A842646823200FBCC87 /* CurrencySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EE1A832646823200FBCC87 /* CurrencySymbol.swift */; };
+		30FA661C26F75E7A00FFDAB4 /* ShebaResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30284D4F26AB169900EB0449 /* ShebaResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -350,7 +350,6 @@
 			files = (
 				30EA90302688335600746AFC /* Currency.swift in Sources */,
 				3030E98726834A8F00AA6F64 /* ConvertNumber.swift in Sources */,
-				30284D5026AB169900EB0449 /* ShebaResult.swift in Sources */,
 				30EA902426882D3500746AFC /* Bill.swift in Sources */,
 				3090244826ABFEC700345F45 /* BankCode.swift in Sources */,
 				305A3047267D143400CC3C15 /* CurrencyCommas.swift in Sources */,
@@ -360,6 +359,7 @@
 				30A31CBB26AD9AC600FB1287 /* BanksCode.swift in Sources */,
 				303FE7CD267E23EE0067F127 /* Sheba.swift in Sources */,
 				30279720267742D9004FA9BB /* CityCode.swift in Sources */,
+				30FA661C26F75E7A00FFDAB4 /* ShebaResult.swift in Sources */,
 				305A3049267D147F00CC3C15 /* ConvertToPersian.swift in Sources */,
 				303E687D2642B34B006447A2 /* SwiftPersianTools.swift in Sources */,
 				305A3044267D13A300CC3C15 /* PersianPhoneNumber.swift in Sources */,

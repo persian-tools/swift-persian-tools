@@ -38,7 +38,7 @@ public extension String {
 
         let bankCode = BankCode()
         for bank in bankCode.bankCodes {
-            if self.contains(bank.key) {
+            if self.prefix(10).contains(bank.key) {
                 return bank.value
             }
         }

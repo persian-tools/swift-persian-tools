@@ -3,7 +3,6 @@
 //  SwiftPersianToolsTests
 
 import XCTest
-import SwiftPersianTools
 
 class TestStringExtension: XCTestCase {
 
