@@ -173,4 +173,28 @@ class TestStringExtension: XCTestCase {
         phoneNumber = "09981000000"
         XCTAssertTrue(phoneNumber.getPhoneNumberDetail()?.operatorName.rawValue == Operators.ShatelMobile.rawValue)
     }
+
+    func testHasLetter() throws {
+        var str = "سلام ۱۲۳"
+        XCTAssertTrue(str.hasLetters)
+
+        str = "۱۲۳"
+        XCTAssertFalse(str.hasLetters)
+    }
+
+    func testHasNumber() throws {
+        var str = "سلام ۱۲۳"
+        XCTAssertTrue(str.hasNumbers)
+
+        str = "سلام"
+        XCTAssertFalse(str.hasNumbers)
+    }
+
+    func testValidateUrl() throws {
+        var url = "https://google.com"
+        XCTAssertTrue(url.isValidUrl)
+
+        url = "google"
+        XCTAssertFalse(url.isValidUrl)
+    }
 }
