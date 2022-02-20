@@ -1,9 +1,6 @@
 //
 //  PersianPhoneNumber.swift
 //  SwiftPersianTools
-//
-//  Created by Saeed on 6/18/21.
-//
 
 import Foundation
 
@@ -16,6 +13,35 @@ public extension String {
         } catch {
             return false
         }
+    }
+
+    func getPhoneNumberDetail() -> OperatorModel? {
+        if !self.isPersianPhoneNumber() {
+            return nil
+        }
+
+        let prefix = getPhonePrefix()
+
+        for operatorItem in OperatorsList().operatorsList {
+            if prefix == operatorItem.prefix {
+                return operatorItem
+            }
+        }
+
+        return nil
+    }
+
+    private func getPhonePrefix() -> String? {
+        var phone = self
+        do {
+            let regex = try NSRegularExpression(pattern: "^(\\+98|98|0098|0)", options: .caseInsensitive)
+            let range = NSMakeRange(0, self.count)
+            phone = regex.stringByReplacingMatches(in: self, options: [], range: range, withTemplate: "")
+        } catch {
+            return nil
+        }
+
+        return String(phone.prefix(3))
     }
 
     func convertPersianNumberToEnglish() -> String {
