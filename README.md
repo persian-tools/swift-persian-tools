@@ -16,9 +16,11 @@
 -   [Convert Persian numbers to Arabic or English numbers and vice versa](#convert-persian-numbers-to-arabic-or-english-numbers-and-vice-versa).
 -   [Validate Iranian national number(code-e Melli)](#validate-iranian-national-numbercode-e-melli).
 -   [Find city and province name by national code(code-e Melli)](#find-city-and-province-name-by-national-idcode-e-melli).
+-   [Validate Bank card number](#bank-number-validation).
+-   [Find Bank's name by Card number](#find-banks-name-by-card-number).
 -   [Bill calculator](#bill-calculator).
 -   [Check Iranian Sheba(IBAN) validation](#iranian-shebaiban).
--   [Validate Bank card number](#bank-number-validation).
+
 
 ## Installation
 
@@ -132,6 +134,14 @@ cardNumber = "6219861034529008"
 cardNumber.verifyCardNumber()   /// false
 
 "6219861034529007002229988112233".verifyCardNumber()   /// false
+```
+
+### Find Bank's name by Card number
+```swift
+import SwiftPersianTools
+
+var cardNumber = "6219861034529007"
+cardNumber.getBankNameFromCardNumber()   /// بانک سامان
 ```
 
 ### Bill calculator
